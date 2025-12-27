@@ -1,0 +1,5 @@
+streamlit
+pandas
+plotly
+openpyxl  # for Excel support
+# Add more if needed, e.g., for LLM: openai or similar, but keep minimal
