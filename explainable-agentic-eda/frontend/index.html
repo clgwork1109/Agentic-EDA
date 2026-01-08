@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explainable Agentic EDA</title>
+
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Explainable Agentic EDA</h1>
+  </header>
+
+  <section class="controls">
+    <input type="file" id="fileInput" />
+    <button onclick="runEDA()">Run EDA</button>
+  </section>
+
+  <!-- KPI CARDS -->
+  <section id="kpis" class="kpi-grid"></section>
+
+  <!-- DISTRIBUTIONS -->
+  <section>
+    <h2>Distributions</h2>
+    <div id="charts" class="chart-grid"></div>
+  </section>
+
+  <!-- CORRELATION -->
+  <section>
+    <h2>Correlation Analysis</h2>
+    <div id="correlation" class="chart"></div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section>
+    <h2>Key Insights</h2>
+    <div id="insights" class="insight-grid"></div>
+  </section>
+
+  <!-- AGENT DEBUG -->
+  <section>
+    <h2>Agent Debug Panel</h2>
+    <pre id="debug"></pre>
+  </section>
+
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>
